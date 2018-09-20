@@ -17,7 +17,7 @@ It contains 1,470 examples and 35 features (34 features and 1 binary response).
 
 ## Results
 Pseudo-R2 bigger when there are all variables in logistic regression, after deleting unsignificant (according to ANOVA test and those which p(z-test) > 0.05) Pseudo-R2 decreased.  
-Accuracy of prediction is 0.886621315193  
-Precision: No attrition - 0.894207 / Attrition - 0.818182  
-Recall:    No attrition - 0.977961 / Attrition - 0.461538  
+The accuracy is relatively high, but that is because the classes are skewed (there are many more people with Attrition == 0 than Attrition == 1)   
+The precision score is relatively high for both classes, so classifications from the model are highly likely to be correct  
+The recall score is very high for 'No attrition' and low for 'Attrition'. Therefore given an instance of attrition, the model is not highly likely to predict it. However, given an example of non-attrition, the model is very likely to predict it.  
 
